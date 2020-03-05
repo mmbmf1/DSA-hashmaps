@@ -16,7 +16,7 @@ class HashMap {
   }
 
   set(key, value) {
-    const loadRatio = (this.length + this._deleted + 1) / this._capacity;
+    const loadRatio = (this.length + this._deleted + 1) / this._capacity; //??
     if (loadRatio > HashMap.MAX_LOAD_RATIO) {
       this._resize(this._capacity * HashMap.SIZE_RATIO);
     }
@@ -84,3 +84,5 @@ class HashMap {
     return hash >>> 0;
   }
 }
+
+module.exports = HashMap;
