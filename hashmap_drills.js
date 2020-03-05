@@ -7,7 +7,7 @@ const main = () => {
 
   lotr.set("Hobbit", "Bilbo");
 
-  console.log(lotr);
-
   return lotr;
 };
+
+console.log(main());
